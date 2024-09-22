@@ -6,6 +6,33 @@ Overview
 
 This project is a concert management system using SQLAlchemy and Alembic for migrations.
 
+Project Models
+--------------
+
+The project includes the following models:
+
+-   **Band**: Represents a musical band with attributes `id`, `name`, and `hometown`. It includes methods for:
+
+    -   Getting associated concerts.
+    -   Retrieving venues where the band performs.
+    -   Scheduling a concert at a venue on a specific date.
+    -   Generating introductions for concerts.
+    -   Finding the band with the most performances.
+
+-   **Venue**: Represents a concert location with attributes `id`, `title`, and `city`. It includes methods for:
+
+    -   Getting associated concerts.
+    -   Retrieving bands that perform at the venue.
+    -   Finding a concert on a specific date.
+    -   Identifying the most frequently performing band.
+    
+-   **Concert**: Represents a concert event with attributes `id`, `date`, `band_id`, and `venue_id`. It includes methods for:
+
+    -   Getting the associated band and venue.
+    -   Checking if the concert is a hometown show.
+    -   Generating introductions for the audience.
+
+
 Setup Instructions
 ------------------
 
