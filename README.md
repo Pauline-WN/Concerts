@@ -1,14 +1,22 @@
-`# Concerts Project
+Concerts Project
+================
 
-## Overview
+Overview
+--------
+
 This project is a concert management system using SQLAlchemy and Alembic for migrations.
 
-## Setup Instructions
+Setup Instructions
+------------------
 
-### 1. Clone the repository
-```bash
-git clone git@github.com:Pauline-WN/Concerts.git
-cd Concerts `
+### 1\. Clone the Repository
+
+bash
+
+Copy code
+
+`git clone git@github.com:Pauline-WN/Concerts.git
+cd Concerts`
 
 ### 2\. Install Dependencies
 
@@ -29,7 +37,7 @@ ini
 
 Copy code
 
-`sqlalchemy.url = <your-database-url>`
+`sqlalchemy.url = sqlite:///concerts.db`
 
 ### 4\. Initialize Alembic Migrations
 
@@ -59,11 +67,23 @@ Copy code
 
 `Database initialized!`
 
-### 6\. Running the Application
+### 6\. Populate the Database
+
+To add initial data to the database tables, run the `populate_db.py` script:
+
+bash
+
+Copy code
+
+`python populate_db.py`
+
+This script will insert sample data into the `bands` table and any other relevant tables.
+
+### 7\. Running the Application
 
 Once the database is set up, you can start using the app. (In this project, `run.py` only initializes the database, but in a larger project, it could also start the app.)
 
-### 7\. Running Tests
+### 8\. Running Tests
 
 You can run the unit tests for the models to ensure everything works as expected:
 

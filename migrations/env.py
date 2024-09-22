@@ -5,10 +5,10 @@ from alembic import context
 from app.database import Base
 from app.models import Band, Venue, Concert
 
-# Interpret the config file for Python logging.
+# Interpreting the config file for Python logging.
 fileConfig(context.config.config_file_name)
 
-# Add your models here
+# Adding models here
 target_metadata = Base.metadata
 
 # Other migration configurations
